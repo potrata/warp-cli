@@ -1,6 +1,6 @@
 {
   "name": "warp-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CLI toolset prototype built with blessed",
   "bin": {
     "warp": "./dist/bin/warp"
