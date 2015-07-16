@@ -1,0 +1,7 @@
+*.log
+*.pid
+*.seed
+.idea
+node_modules
+out
+dist

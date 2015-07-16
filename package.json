@@ -1,0 +1,32 @@
+{
+  "name": "warp-cli",
+  "version": "0.0.0",
+  "description": "CLI toolset prototype built with blessed",
+  "bin": {
+    "warp": "./dist/bin/warp"
+  },
+  "scripts": {
+    "build": "npm install && rm -rf ./dist && babel --source-maps=true --extensions='.es6' --copy-files -d ./dist ./",
+    "permissions": "chmod a+x ./dist/bin/warp.js",
+    "start": "npm run build && npm run permissions && ./dist/bin/warp.js"
+  },
+  "author": "Nikolay Chursin <nick.chursin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-warp": "^1.x.x",
+    "blessed": "^0.x.x"
+  },
+  "devDependencies": {
+    "babel": "^5.x.x",
+    "babel-runtime": "^5.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/potrata/warp-cli"
+  },
+  "keywords": [
+    "warp",
+    "cli",
+    "blessed"
+  ]
+}
